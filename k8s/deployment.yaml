@@ -16,7 +16,7 @@ apiVersion: apps/v1
        spec:
          containers:
          - name: webapp
-           image: laelitib/webapp:90fee64
+           image: laelitib/webapp:ed4f799
            ports:
            - containerPort: 80
            resources:
