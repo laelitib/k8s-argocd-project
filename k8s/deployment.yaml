@@ -1,28 +1,28 @@
 apiVersion: apps/v1
-   kind: Deployment
-   metadata:
-     name: webapp-deployment
-     labels:
-       app: webapp
-   spec:
-     replicas: 2
-     selector:
-       matchLabels:
-         app: webapp
-     template:
-       metadata:
-         labels:
-           app: webapp
-       spec:
-         containers:
-         - name: webapp
-           image: laelitib/webapp:90fee64
-           ports:
-           - containerPort: 80
-           resources:
-             requests:
-               memory: "64Mi"
-               cpu: "100m"
-             limits:
-               memory: "128Mi"
-               cpu: "200m"
+kind: Deployment
+metadata:
+  name: webapp-deployment
+  labels:
+    app: webapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: webapp
+  template:
+    metadata:
+      labels:
+        app: webapp
+    spec:
+      containers:
+      - name: webapp
+        image: laelitib/webapp:90fee64
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
