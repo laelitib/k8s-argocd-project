@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: laelitib/webapp:90fee64
+        image: laelitib/webapp:b16f277
         ports:
         - containerPort: 80
         resources:
