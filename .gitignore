@@ -1,0 +1,4 @@
+echo *.token > .gitignore
+echo *.secret >> .gitignore
+echo access-token.txt >> .gitignore
+echo .env >> .gitignore
