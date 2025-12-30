@@ -1,0 +1,2 @@
+docker login -u laelitib
+dckr_pat_TVxM22Casb3FQtWVJeX7zZjlxlc
